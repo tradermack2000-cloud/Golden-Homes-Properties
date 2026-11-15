@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golden Homes Properties helps you explore property opportunities in Ghana.">
+  <meta name="theme-color" content="#102a24">
+  <title>Golden Homes Properties | Find a Place to Call Home</title>
+  <style>
+    :root{--green:#102a24;--green2:#1b493b;--gold:#d7ad62;--cream:#f7f5ef;--ink:#1e2925;--muted:#69736e;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--green);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Georgia,serif;font-size:1.18rem;font-weight:bold;letter-spacing:.3px}.brand span{display:block;color:var(--gold);font: .67rem Arial,sans-serif;letter-spacing:2.5px;text-transform:uppercase}
+    nav{display:flex;gap:25px;align-items:center;font-size:.93rem}nav a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:1px solid #ffffff66;color:#fff;border-radius:8px;padding:8px 12px;font-size:1.1rem}
+    .hero{min-height:570px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(7,27,22,.88),rgba(7,27,22,.35)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-content{max-width:670px;padding:85px 0}.eyebrow{color:var(--gold);font-size:.78rem;letter-spacing:3px;text-transform:uppercase;font-weight:bold}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15}h1{font-size:clamp(2.5rem,6vw,4.6rem);margin:16px 0}h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 16px}
+    .hero p{font-size:1.12rem;max-width:560px;color:#f1f1ed}.btn{display:inline-block;border:0;border-radius:4px;padding:13px 22px;font-weight:bold;cursor:pointer;background:var(--gold);color:#18251f;margin:10px 8px 0 0}.btn:hover{filter:brightness(1.06)}.btn-outline{background:transparent;border:1px solid #fff;color:#fff}
+    .searchbar{background:#fff;padding:20px;border-radius:8px;box-shadow:0 12px 35px #0002;margin-top:-38px;position:relative;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:12px;align-items:end}
+    label{display:block;font-size:.78rem;font-weight:bold;color:var(--muted);margin-bottom:5px}select,input{width:100%;padding:12px;border:1px solid #d8ddd8;border-radius:4px;background:#fff;font:inherit;color:var(--ink)}
+    section{padding:82px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.property{border:1px solid #e7e9e5;border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 6px 22px #12251a0b}
+    .property img{width:100%;height:220px;object-fit:cover;display:block}.property-body{padding:20px}.tag{display:inline-block;background:#edf2ed;color:var(--green2);padding:4px 9px;border-radius:3px;font-size:.72rem;font-weight:bold;text-transform:uppercase;letter-spacing:.7px}
+    .property h3{font-size:1.35rem;margin:12px 0 5px}.location{color:var(--muted);font-size:.9rem}.price{color:var(--green2);font-weight:bold;font-size:1.1rem;margin:12px 0}.details{border-top:1px solid #e8ebe7;padding-top:12px;color:var(--muted);font-size:.85rem}
+    .notice{font-size:.82rem;color:#7b6b4d;background:#fbf7ed;padding:12px 15px;border-left:3px solid var(--gold);margin-top:22px}
+    .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about img{width:100%;height:390px;object-fit:cover;border-radius:8px}.checks{padding:0;list-style:none}.checks li{margin:12px 0}.checks li:before{content:"✓";color:#9b7435;font-weight:bold;margin-right:10px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:25px;border:1px solid #e5e9e4;border-radius:8px}.service .symbol{font-size:1.7rem}.service h3{margin:12px 0 6px}
+    .contact{background:var(--green);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}.contact p{color:#d5dfd9}.contact label{color:#e3e9e5}.contact input,.contact textarea{margin-bottom:12px}.contact textarea{width:100%;min-height:110px;padding:12px;border:1px solid #d8ddd8;border-radius:4px;font:inherit}
+    footer{background:#0b1d18;color:#d5dfd9;padding:25px 0;font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--green);padding:18px 4%;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.hero{min-height:520px}.searchbar{grid-template-columns:1fr;margin-top:-25px}.cards,.services{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.about img{height:270px}section{padding:62px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Golden Homes <span>Properties</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#properties">Properties</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-content">
+      <div class="eyebrow">A better place to begin</div>
+      <h1>Find a place<br>to call home.</h1>
+      <p>Explore property opportunities with Golden Homes Properties. Let us help you take your next step in real estate in Ghana.</p>
+      <a class="btn" href="#properties">Explore properties</a>
+      <a class="btn btn-outline" href="#contact">Talk to our team</a>
+    </div>
+  </section>
+  <div class="wrap">
+    <form class="searchbar" id="propertySearch">
+      <div><label for="type">I'm looking for</label><select id="type"><option>Any property</option><option>House</option><option>Apartment</option><option>Land</option></select></div>
+      <div><label for="purpose">Purpose</label><select id="purpose"><option>Buy</option><option>Rent</option></select></div>
+      <div><label for="area">Preferred location</label><input id="area" placeholder="e.g. Accra, Tema, Kumasi"></div>
+      <button class="btn" type="submit">Browse</button>
+    </form>
+  </div>
+  <section id="properties">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Discover your next move</div><h2>Featured properties</h2><p>Take a look at the kinds of properties you can showcase here.</p></div>
+      <div class="cards">
+        <article class="property"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Contemporary house exterior"><div class="property-body"><span class="tag">Example listing</span><h3>Modern family home</h3><div class="location">Location to be confirmed · Ghana</div><div class="price">Price on request</div><div class="details">House · Property details to be added</div></div></article>
+        <article class="property"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Bright modern apartment interior"><div class="property-body"><span class="tag">Example listing</span><h3>Contemporary apartment</h3><div class="location">Location to be confirmed · Ghana</div><div class="price">Price on request</div><div class="details">Apartment · Property details to be added</div></div></article>
+        <article class="property"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Open green land"><div class="property-body"><span class="tag">Example listing</span><h3>Land opportunity</h3><div class="location">Location to be confirmed · Ghana</div><div class="price">Price on request</div><div class="details">Land · Title and plot details to be added</div></div></article>
+      </div>
+      <p class="notice"><strong>Demo content:</strong> These are sample display cards, not verified properties for sale or rent. Replace them with genuine listings and confirmed details before publishing to customers.</p>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Welcoming modern home">
+      <div><div class="eyebrow">About Golden Homes</div><h2>Property decisions deserve care.</h2><p class="muted">Golden Homes Properties is presented here as a real estate brand focused on helping people explore property options with confidence. Add your company's real story, experience and credentials in this section.</p><ul class="checks"><li>Clear information about every listing</li><li>Helpful support for buyers and renters</li><li>Property options suited to customer needs</li></ul><a class="btn" href="#contact">Get in touch</a></div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="wrap"><div class="section-head"><div class="eyebrow">How we can help</div><h2>Our services</h2><p>Update these service descriptions to match the services your business actually provides.</p></div>
+      <div class="services">
+        <div class="service"><div class="symbol">⌂</div><h3>Buying property</h3><p class="muted">Explore homes, apartments and land that match your needs.</p></div>
+        <div class="service"><div class="symbol">⌑</div><h3>Renting property</h3><p class="muted">Find rental options and arrange a viewing with the team.</p></div>
+        <div class="service"><div class="symbol">◇</div><h3>Property sales</h3><p class="muted">Present your property to people looking for their next home.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div><div class="eyebrow">Let's talk property</div><h2>Start a conversation.</h2><p>Contact Golden Homes Properties to ask about a listing or discuss what you are looking for.</p><p><strong>Phone:</strong> Add your business phone number</p><p><strong>Email:</strong> Add your business email</p><p><strong>Location:</strong> Add your office location</p></div>
+      <form id="contactForm">
+        <label for="name">Your name</label><input id="name" required placeholder="Full name">
+        <label for="email">Email address</label><input id="email" type="email" required placeholder="you@example.com">
+        <label for="message">How can we help?</label><textarea id="message" required placeholder="Tell us what kind of property you are looking for"></textarea>
+        <button class="btn" type="submit">Send enquiry</button>
+        <p style="font-size:.78rem;color:#cbd8d1">Demo only: this form does not send messages until connected to a form service.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Golden Homes Properties</span><span>Built to help you find your next place.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+document.getElementById('propertySearch').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.querySelector('#properties').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('This demo form is not connected yet. Add your business email or a form service before publishing.');
+});</script>
+</body>
+</html>
